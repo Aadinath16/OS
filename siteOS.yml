@@ -1,0 +1,10 @@
+---
+  - hosts: localhost
+    become: True
+    tasks:
+        - name: Get the OS version
+          command: cat /etc/os-release
+          register: os_version
+        
+        - debug:
+          msg: "{{ os_version }}"        
