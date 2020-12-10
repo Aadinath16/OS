@@ -7,4 +7,4 @@
           register: os_version
         
         - debug:
-          msg: "{{ os_version }}"        
+             msg: "{{ os_version }}"        
